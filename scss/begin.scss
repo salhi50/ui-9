@@ -1,0 +1,235 @@
+@import 'variables';
+@import 'mixins';
+@import 'functions';
+html {
+    @media screen and (max-width: 400px) {
+        font-size: 15px;
+    }
+    @media screen and (max-width: 300px) {
+        font-size: 13px;
+    }
+    @media screen and (max-width: 250px) {
+        font-size: 11px;
+    }
+    @media screen and (max-width: 200px) {
+        font-size: 10px;
+    }
+}
+// MAIN BTN
+.main-btn{
+    background-color: $main-color;
+    color: #ffffff;
+    border-radius: 2px;
+    font-size: $font-big;
+    padding: rem(7) rem(30) !important;
+}
+.secondary-btn {
+    background-color: $main-light-color;
+    color: $main-color;
+    border-radius: 3px;
+    border: 2px solid darken(#FFEEF4, 1);
+    font-size: $font-big;
+    padding: rem(7) rem(30) !important;
+
+}
+.main-input {
+    border: 2px solid #e5e5e5 !important;
+    border-radius: 3px !important;
+    min-height: 37px !important;
+    transition: background-color .2s ease-in-out,
+                border-color .2s ease-in-out !important;
+}
+.main-input:focus {
+    background-color: $main-light-color !important;
+    border-color: $main-color !important;
+}
+.main-input.active {
+    background-color: $main-light-color !important;
+    border-color: $main-color !important;
+}
+
+// header content
+
+// container
+ 
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 rem(20);
+    min-height: 100vh;
+}
+
+header {
+    padding: rem(20) 0;
+    margin-bottom: rem(35);
+    .header--logo-text {
+        color: $grey-color;
+        span {
+            color: $light-black;
+            font-weight: 600;
+        }
+    }
+    .header--logo-img {
+        width: rem(30);
+        height: rem(30);
+    }
+    .h3-mid {
+        font-size: 1.1rem;
+    }
+    .header--link {
+        color: $grey-color;
+        font-size: $font-medium-2;
+        transition: all .2s ease-in-out;
+        &:hover {
+            color: $light-black;
+        }
+    }
+    .header--link.active{
+        color: $light-black;
+        font-weight: 600;
+    }
+}
+
+// start the main content
+
+section {
+    @include media(small) {
+        margin-top: rem(70);
+    }
+}
+
+.section {
+    .welcome {
+        width: 500px;
+        max-width: 100%;
+        margin: 0 auto !important;
+    }
+    .welcome--img {
+        width: rem(100);
+        height: rem(100);
+    }
+    .section--title {
+        color: $light-black;
+    }
+    .section--description {
+        color: $grey-color;
+        font-size: $font-big;
+    }
+    .welcome--gender-input {
+        width: rem(70);
+        padding-right: rem(15);
+        &.active + .welcome--gender-icon{
+            color: $main-color;
+        }
+    }
+    .welcome--gender-icon {
+        right: rem(10);
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: rem(12) !important;
+    }
+    .welcome--group {
+        margin-bottom: 1.5rem;
+        @include media(mobile) {
+            margin-bottom: 1rem;
+        }
+    }
+    .welcome--content {
+        margin-bottom: rem(100);
+        @include media(mobile) {
+            margin-bottom: rem(50);
+        }
+    }
+}
+
+// start with the sport section
+
+.sport {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+    .sports--container {
+        @include media(small) {
+            grid-template-columns: repeat(3,1fr);
+            gap: rem(40) rem(22);
+            }
+            @include media(mobile) {
+                grid-template-columns: 1fr;
+                gap: rem(20);
+            }
+    }
+    .sport--box {
+        border: 2px solid #e5e5e5;
+        border-radius: 3px;
+        padding: rem(18);
+        transition: background-color .2s ease-in-out,
+                    border-color .2s ease-in-out;
+    }
+    .sport--box.active {
+        background-color: $main-light-color;
+        border-color: $main-color;
+    }
+    .sport--img {
+        width: rem(35);
+        height: rem(35);
+    }
+    .sport--title {
+        color: $light-black;
+    }
+    .sport--subtitle {
+        color: $grey-color;
+        font-size: $font-medium;
+    }
+    .sport--check {
+        display: none;
+    }
+    .sport--box.active .sport--check {
+        display: block;
+        top: 0;
+        right: 0;
+        transform: translate(12px, -12px);
+        z-index: 100;
+    }
+    .sport--check-icon {
+        background-color: #fff;
+        border-radius: 50%;
+        color: $main-color;
+        font-size: 24px;
+    }
+    .sport--down-description {
+        color: $grey-color;
+        font-size: $font-big;
+    }
+    .sport--more {
+        color: $main-color;
+        font-weight: 600;
+    }
+    .sport--btns {
+        margin-top: rem(100);
+        @include media(mobile) {
+            margin-top: rem(50);
+        }
+    }
+}
+
+// start with the congratulations section
+
+.congra {
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+    .congra--img {
+        width: rem(85);
+        height: rem(85);
+    }
+    .congra--btns {
+        margin-top: rem(60);
+        @include media(mobile) {
+            margin-top: rem(40);
+        }
+    }
+}
+
+.section {
+    margin-bottom: rem(30);
+}

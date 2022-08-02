@@ -1,0 +1,238 @@
+/* Variables */ /* Function list*/ /* mixins list */ /* Function list*/
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 300px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 250px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 200px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+.main-btn {
+  background-color: #FF7BAC;
+  color: #ffffff;
+  border-radius: 2px;
+  font-size: 1rem;
+  padding: 0.4375rem 1.875rem !important;
+}
+
+.secondary-btn {
+  background-color: #FFEEF4;
+  color: #FF7BAC;
+  border-radius: 3px;
+  border: 2px solid #ffe9f1;
+  font-size: 1rem;
+  padding: 0.4375rem 1.875rem !important;
+}
+
+.main-input {
+  border: 2px solid #e5e5e5 !important;
+  border-radius: 3px !important;
+  min-height: 37px !important;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out !important;
+}
+
+.main-input:focus {
+  background-color: #FFEEF4 !important;
+  border-color: #FF7BAC !important;
+}
+
+.main-input.active {
+  background-color: #FFEEF4 !important;
+  border-color: #FF7BAC !important;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  min-height: 100vh;
+}
+
+header {
+  padding: 1.25rem 0;
+  margin-bottom: 2.1875rem;
+}
+header .header--logo-text {
+  color: #8b8e90;
+}
+header .header--logo-text span {
+  color: #4B5860;
+  font-weight: 600;
+}
+header .header--logo-img {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+header .h3-mid {
+  font-size: 1.1rem;
+}
+header .header--link {
+  color: #8b8e90;
+  font-size: 0.9375rem;
+  transition: all 0.2s ease-in-out;
+}
+header .header--link:hover {
+  color: #4B5860;
+}
+header .header--link.active {
+  color: #4B5860;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    margin-top: 4.375rem;
+  }
+}
+
+.section .welcome {
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto !important;
+}
+.section .welcome--img {
+  width: 6.25rem;
+  height: 6.25rem;
+}
+.section .section--title {
+  color: #4B5860;
+}
+.section .section--description {
+  color: #8b8e90;
+  font-size: 1rem;
+}
+.section .welcome--gender-input {
+  width: 4.375rem;
+  padding-right: 0.9375rem;
+}
+.section .welcome--gender-input.active + .welcome--gender-icon {
+  color: #FF7BAC;
+}
+.section .welcome--gender-icon {
+  right: 0.625rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.75rem !important;
+}
+.section .welcome--group {
+  margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .section .welcome--group {
+    margin-bottom: 1rem;
+  }
+}
+.section .welcome--content {
+  margin-bottom: 6.25rem;
+}
+@media screen and (max-width: 768px) {
+  .section .welcome--content {
+    margin-bottom: 3.125rem;
+  }
+}
+
+.sport {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .sport .sports--container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem 1.375rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sport .sports--container {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+.sport .sport--box {
+  border: 2px solid #e5e5e5;
+  border-radius: 3px;
+  padding: 1.125rem;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+.sport .sport--box.active {
+  background-color: #FFEEF4;
+  border-color: #FF7BAC;
+}
+.sport .sport--img {
+  width: 2.1875rem;
+  height: 2.1875rem;
+}
+.sport .sport--title {
+  color: #4B5860;
+}
+.sport .sport--subtitle {
+  color: #8b8e90;
+  font-size: 0.875rem;
+}
+.sport .sport--check {
+  display: none;
+}
+.sport .sport--box.active .sport--check {
+  display: block;
+  top: 0;
+  right: 0;
+  transform: translate(12px, -12px);
+  z-index: 100;
+}
+.sport .sport--check-icon {
+  background-color: #fff;
+  border-radius: 50%;
+  color: #FF7BAC;
+  font-size: 24px;
+}
+.sport .sport--down-description {
+  color: #8b8e90;
+  font-size: 1rem;
+}
+.sport .sport--more {
+  color: #FF7BAC;
+  font-weight: 600;
+}
+.sport .sport--btns {
+  margin-top: 6.25rem;
+}
+@media screen and (max-width: 768px) {
+  .sport .sport--btns {
+    margin-top: 3.125rem;
+  }
+}
+
+.congra {
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.congra .congra--img {
+  width: 5.3125rem;
+  height: 5.3125rem;
+}
+.congra .congra--btns {
+  margin-top: 3.75rem;
+}
+@media screen and (max-width: 768px) {
+  .congra .congra--btns {
+    margin-top: 2.5rem;
+  }
+}
+
+.section {
+  margin-bottom: 1.875rem;
+}/*# sourceMappingURL=begin.css.map */

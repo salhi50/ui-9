@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- framework -->
+  <link rel="stylesheet" href="css/wspace.css">
+  <!-- scss -->
+  <link rel="stylesheet" href="scss/begin.css">
+  <!-- ion icons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <title>UI Design-9</title>
+  <meta name="description" content="Dicover top 100 UI design for the web developement">
+  <meta property="og:title" content="100 UI design">
+  <meta property="og:description" content="Discover the best ui design for web developement">
+</head>
+  <body>
+    <!-- main tag -->
+    <main>
+      <!-- header -->
+
+      <header>
+      <ul class="header--list flex align-center flex-between">
+        <li class="header-left">
+          <div class="header--logo flex align-center">
+            <img src="imgs/document.png" alt="" class="header--logo-img">
+            <p class="h3-mid header--logo-text mgl-6">Sports<span>news</span></p>
+          </div>
+        </li>
+
+        <li class="header-right">
+          <nav class="header--nav">
+            <a href="#" class="header--link mgr-1h5rem d-hidden">Features</a>
+            <a href="#" class="header--link mgr-1h5rem d-hidden">Log in</a>
+            <a href="#" class="header--link mgr-1h5rem active">Sign up</a>
+          </nav>
+        </li>
+      </ul>  
+      </header>
+      <!-- main content -->
+
+      <section class="fl-1 flex align-center justify-center fd-col">
+        <!-- welcome section -->
+        <div class="section welcome">
+          <div class="welcome--up">
+            <img src="imgs/customer.png" class="welcome--img mgb-2rem" alt="">
+            <h2 class="section--title mgb-4">welcome, Create your account</h2>
+            <p class="section--description mgb-2h5rem">Enter your email and create a password</p>
+          </div>
+          <div class="welcome--content">
+            <!-- welcome group 1 -->
+            <div class="welcome--group flex align-center">
+              <!-- welcome gender -->
+              <div class="welcome--gender relative">
+                <input type="text" class="welcome--gender-input main-input active" value="Mr." readonly>
+                <ion-icon name="chevron-down-outline" class="welcome--gender-icon absolute"></ion-icon>
+              </div>
+
+              <!-- welcome input name -->
+              <div class="welcome--name fl-1 mgl-1rem">
+                <input type="text" placeholder="Name" class="main-input full-width">
+              </div>
+            </div>
+            <!-- welcome group 2 -->
+            <div class="welcome--group flex align-center flex-wrap">
+              <div class="welcome--email fl-1 mgr-1rem res-div-100">
+                <!-- email input -->
+                <input type="email" class="main-input full-width" placeholder="Email">
+              </div>
+
+              <div class="welcome--password fl-1 res-div-100 res-mgt-1rem">
+                <!-- password input -->
+                <input type="password" class="main-input full-width" placeholder="Password">
+              </div>
+
+            </div>
+          </div>
+          <div class="welcome--btns flex justify-end">
+            <div class="welcome--continue">
+              <button class="btn main-btn continue">Continue</button>
+            </div>
+          </div>
+        </div>
+        <!-- sports section -->
+        <div class="section sport d-none">
+          <!-- up sport -->
+          <div class="sport--up">
+            <h2 class="section--title">Choose your sports</h2>
+            <p class="section--description mgb-2h5rem">Help us to personalize your experience</p>
+          </div>
+          <!-- sports container -->
+          <div class="sports--container grid">
+            <!--  football -->
+            <div class="sport--box flex align-center relative cursor">
+              <!-- check icon -->
+              <div class="sport--check absolute">
+                <ion-icon name="checkmark-circle" class="sport--check-icon"></ion-icon>
+              </div>
+
+              <!-- sport box img -->
+              <div class="sport-box-left">
+                <img src="imgs/football.png" class="sport--img" alt="">
+              </div>
+              <!-- sport box details -->
+              <div class="sport--box-right mgl-half-1rem">
+                <h6 class="sport--title">Football</h6>
+                <p class="sport--subtitle">120 Sources</p>
+              </div>
+
+            </div>
+            <!-- Cricket -->
+            <div class="sport--box flex align-center relative cursor">
+              <!-- check icon -->
+              <div class="sport--check absolute">
+                <ion-icon name="checkmark-circle" class="sport--check-icon"></ion-icon>
+              </div>
+
+              <!-- sport box img -->
+              <div class="sport-box-left">
+                <img src="imgs/cricket.png" class="sport--img" alt="">
+              </div>
+              <!-- sport box details -->
+              <div class="sport--box-right mgl-half-1rem">
+                <h6 class="sport--title">Cricket</h6>
+                <p class="sport--subtitle">65 Sources</p>
+              </div>
+
+            </div>
+            <!-- Tennis -->
+            <div class="sport--box flex align-center relative cursor">
+              <!-- check icon -->
+              <div class="sport--check absolute">
+                <ion-icon name="checkmark-circle" class="sport--check-icon"></ion-icon>
+              </div>
+
+              <!-- sport box img -->
+              <div class="sport-box-left">
+                <img src="imgs/tennis.png" class="sport--img" alt="">
+              </div>
+              <!-- sport box details -->
+              <div class="sport--box-right mgl-half-1rem">
+                <h6 class="sport--title">Tennis</h6>
+                <p class="sport--subtitle">102 Sources</p>
+              </div>
+
+            </div>
+            <!-- Table Tennis -->
+            <div class="sport--box flex align-center relative cursor">
+              <!-- check icon -->
+              <div class="sport--check absolute">
+                <ion-icon name="checkmark-circle" class="sport--check-icon"></ion-icon>
+              </div>
+
+              <!-- sport box img -->
+              <div class="sport-box-left">
+                <img src="imgs/table.png" class="sport--img" alt="">
+              </div>
+              <!-- sport box details -->
+              <div class="sport--box-right mgl-half-1rem">
+                <h6 class="sport--title">Table Tennis</h6>
+                <p class="sport--subtitle">34 Sources</p>
+              </div>
+
+            </div>
+            <!-- Golf -->
+            <div class="sport--box flex align-center relative cursor">
+              <!-- check icon -->
+              <div class="sport--check absolute">
+                <ion-icon name="checkmark-circle" class="sport--check-icon"></ion-icon>
+              </div>
+
+              <!-- sport box img -->
+              <div class="sport-box-left">
+                <img src="imgs/golf.png" class="sport--img" alt="">
+              </div>
+              <!-- sport box details -->
+              <div class="sport--box-right mgl-half-1rem">
+                <h6 class="sport--title">Golf</h6>
+                <p class="sport--subtitle">98 Sources</p>
+              </div>
+
+            </div>
+            <!-- Hockey -->
+            <div class="sport--box flex align-center relative cursor">
+              <!-- check icon -->
+              <div class="sport--check absolute">
+                <ion-icon name="checkmark-circle" class="sport--check-icon"></ion-icon>
+              </div>
+
+              <!-- sport box img -->
+              <div class="sport-box-left">
+                <img src="imgs/hockey.png" class="sport--img" alt="">
+              </div>
+              <!-- sport box details -->
+              <div class="sport--box-right mgl-half-1rem">
+                <h6 class="sport--title">Hockey</h6>
+                <p class="sport--subtitle">19 Sources</p>
+              </div>
+
+            </div>
+            <!-- Racing -->
+            <div class="sport--box flex align-center relative cursor">
+              <!-- check icon -->
+              <div class="sport--check absolute">
+                <ion-icon name="checkmark-circle" class="sport--check-icon"></ion-icon>
+              </div>
+
+              <!-- sport box img -->
+              <div class="sport-box-left">
+                <img src="imgs/racing.png" class="sport--img" alt="">
+              </div>
+              <!-- sport box details -->
+              <div class="sport--box-right mgl-half-1rem">
+                <h6 class="sport--title">Racing</h6>
+                <p class="sport--subtitle">23 Sources</p>
+              </div>
+
+            </div>
+            <!-- Archery -->
+            <div class="sport--box flex align-center relative cursor">
+              <!-- check icon -->
+              <div class="sport--check absolute">
+                <ion-icon name="checkmark-circle" class="sport--check-icon"></ion-icon>
+              </div>
+
+              <!-- sport box img -->
+              <div class="sport-box-left">
+                <img src="imgs/archery.png" class="sport--img" alt="">
+              </div>
+              <!-- sport box details -->
+              <div class="sport--box-right mgl-half-1rem">
+                <h6 class="sport--title">Archery</h6>
+                <p class="sport--subtitle">12 Sources</p>
+              </div>
+
+            </div>
+            <!-- Billiards -->
+            <div class="sport--box flex align-center relative">
+              <!-- check icon -->
+              <div class="sport--check absolute">
+                <ion-icon name="checkmark-circle" class="sport--check-icon"></ion-icon>
+              </div>
+
+              <!-- sport box img -->
+              <div class="sport-box-left">
+                <img src="imgs/billiard.png" class="sport--img" alt="">
+              </div>
+              <!-- sport box details -->
+              <div class="sport--box-right mgl-half-1rem">
+                <h6 class="sport--title">Billiards</h6>
+                <p class="sport--subtitle">19 Sources</p>
+              </div>
+
+            </div>
+          </div>
+          <!-- sport down -->
+          <div class="sport--down mgt-1rem">
+            <p class="sport--down-description">
+              <span class="sport--more">Show more?</span>
+              You can also do this later
+            </p>
+          </div>
+          <div class="sport--btns flex align-center justify-end">
+            <!-- back btn -->
+            <div class="sport--back mgr-1rem">
+              <button class="btn secondary-btn back">Back</button>
+            </div>
+            <!-- continue btn -->
+            <div class="sport--continue">
+              <button class="btn main-btn continue">Continue</button>
+            </div>
+          </div>
+        <!-- Congratulations section -->
+
+        </div>
+        <div class="congra section d-none">
+          <!-- Congratulations up -->
+          <div class="congra--img mgb-2rem">
+            <img src="imgs/like.png" alt="">
+          </div>
+          <h2 class="section--title">Congratulations, You're all set!</h2>
+          <p class="section--description">You can always update your profile later</p>
+          <!-- congra btns -->
+          <div class="congra--btns flex align-center justify-end">
+            <div class="congra--back mgr-1rem">
+              <button class="btn secondary-btn back">Back</button>
+            </div>
+            <!-- start btn -->
+            <div class="congra--continue">
+              <button class="btn main-btn continue">Lets Start</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+<script src="script.js"></script>
+</html>
